@@ -304,6 +304,10 @@ svg {
     cursor: pointer;
 }
 
+.listProduct .item button:hover {
+    background-color: #cd8d0e;
+}
+
 .cartTab {
     width: 400px;
     background-color: #353432;
@@ -344,8 +348,17 @@ body.showCart .container {
     cursor: pointer;
 }
 
+.cartTab .checkOut:hover {
+    background-color: #e8bc0ece;
+}
+
+
 .cartTab .close {
     background-color: #eee;
+}
+
+.cartTab .close:hover {
+    background-color: #eeeeeed5;
 }
 
 .listCart .item img {
@@ -368,6 +381,10 @@ body.showCart .container {
     border-radius: 50%;
     color: #555;
     cursor: pointer;
+}
+
+.listCart .quantity span:hover {
+    background-color: #eeeeeed5;
 }
 
 .listCart .quantity span:nth-child(2) {
