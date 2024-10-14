@@ -1,19 +1,19 @@
-body, html {
+body,
+html {
     height: 100%;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .hero-image {
+}
+
+.hero-image {
     background-image: url('images/cat-hero.jpeg');
     height: 60%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-  }
-  
-  .hero-text {
+}
+
+.hero-text {
     text-align: center;
     position: absolute;
     top: 60%;
@@ -21,14 +21,14 @@ body, html {
     transform: translate(-50%, -50%);
     color: white;
 
-    text-shadow: 
-        0.1em 0.1em 0 gray,  
-        -0.1em 0.1em 0 gray, 
-        0.1em -0.1em 0  gray,  
-        -0.1em -0.1em 0 gray; 
-    }
-  
-  .hero-text button {
+    text-shadow:
+        0.1em 0.1em 0 gray,
+        -0.1em 0.1em 0 gray,
+        0.1em -0.1em 0 gray,
+        -0.1em -0.1em 0 gray;
+}
+
+.hero-text button {
     border: none;
     outline: 0;
     display: inline-block;
@@ -37,14 +37,15 @@ body, html {
     background-color: #ffbf00;
     text-align: center;
     cursor: pointer;
-  }
-  
-  .hero-text button:hover {
+}
+
+.hero-text button:hover {
     background-color: #cd8d0e;
     color: white;
-  }
-  body {
-    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: 'Comic Sans MS';
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
@@ -67,7 +68,12 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 10px 20px;
+}
+
+nav ul li:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
 }
 
 nav ul li a {
@@ -78,6 +84,7 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
+
 }
 
 section {
@@ -85,7 +92,9 @@ section {
     margin: 20px 0;
 }
 
-.menu, .about, .reservation {
+.menu,
+.about,
+.reservation {
     background-color: white;
     padding: 20px;
     border-radius: 5px;
@@ -97,7 +106,8 @@ section {
     border-collapse: collapse;
 }
 
-.menu th, .menu td {
+.menu th,
+.menu td {
     padding: 10px;
     border: 1px solid #ddd;
     text-align: left;
@@ -107,13 +117,18 @@ section {
     background-color: #f8f8f8;
 }
 
-.contact-form, .reservation-form, .survey-form {
+.contact-form,
+.reservation-form,
+.survey-form {
     max-width: 600px;
     margin: 0 auto;
 }
 
-.contact-form input, .reservation-form input, .survey-form input, 
-.survey-form textarea, .contact-form textarea, 
+.contact-form input,
+.reservation-form input,
+.survey-form input,
+.survey-form textarea,
+.contact-form textarea,
 .reservation-form select {
     width: 100%;
     padding: 10px;
@@ -135,12 +150,14 @@ section {
     background-color: #940404;
 }
 
-ul, ol {
+ul,
+ol {
     margin: 20px 0;
     padding: 0;
 }
 
-ul li, ol li {
+ul li,
+ol li {
     margin-bottom: 10px;
 }
 
@@ -162,6 +179,7 @@ footer {
     height: auto;
     border-radius: 5px;
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -170,12 +188,14 @@ footer {
     margin: 0 auto;
     max-width: 1200px;
 }
+
 .grid-item {
     position: relative;
     overflow: hidden;
     cursor: pointer;
     text-align: center;
 }
+
 .grid-item img {
     width: 100%;
     height: auto;
@@ -184,5 +204,186 @@ footer {
 }
 
 .grid-item:hover img {
-    transform: scale(1.1); /* Zoom effect on hover */
+    transform: scale(1.1);
+}
+
+.background {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+}
+
+.container {
+    width: 900px;
+    margin: auto;
+    max-width: 90vw;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform .5s;
+}
+
+svg {
+    width: 30px;
+}
+
+.shop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.icon-cart {
+    position: relative;
+}
+
+.icon-cart:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.icon-cart span {
+    position: absolute;
+    background-color: #dc0000;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    top: 50%;
+    right: -20px;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.listProduct .item img {
+    width: 100%;
+    filter: drop-shadow(0 10px 20px #0009);
+}
+
+.listProduct {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.listProduct .item {
+    background-color: #EEEEE6;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.listProduct .item:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.listProduct .item h2 {
+    font-weight: 500;
+    font-size: large;
+}
+
+.listProduct .item .price {
+    letter-spacing: 7px;
+    font-size: small;
+}
+
+.listProduct .item button {
+    background-color: #353432;
+    color: #eee;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.cartTab {
+    width: 400px;
+    background-color: #353432;
+    color: #eee;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+}
+
+body.showCart .cartTab {
+    right: 0;
+}
+
+body.showCart .container {
+    transform: translateX(-250px);
+}
+
+.cartTab h1 {
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.cartTab .btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cartTab button {
+    background-color: #E8BC0E;
+    border: none;
+    font-family: 'Comic Sans MS';
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cartTab .close {
+    background-color: #eee;
+}
+
+.listCart .item img {
+    width: 100%;
+}
+
+.listCart .item {
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.listCart .quantity span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    color: #555;
+    cursor: pointer;
+}
+
+.listCart .quantity span:nth-child(2) {
+    background-color: transparent;
+    color: #eee;
+    cursor: auto;
+}
+
+.listCart .item:nth-child(even) {
+    background-color: #eee1;
+}
+
+.listCart {
+    overflow: auto;
+}
+
+.listCart::-webkit-scrollbar {
+    width: 0;
 }
