@@ -5,7 +5,7 @@ const background = ["background-image: url('images/cat-hero.jpeg');",
                     "background-image: url('images/b3.jpg');",
                     "background-image: url('images/b4.jpg');",
                     "background-image: url('images/b5.jpg');",
-                    "background-image: url('images/b6.jpg');",]
+                    "background-image: url('images/b6.webp');",]
 let index = 1
 
 function updateImage() {
