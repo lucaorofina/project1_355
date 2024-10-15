@@ -5,12 +5,25 @@ html {
 }
 
 .hero-image {
-    background-image: url('images/cat-hero.jpeg');
-    height: 70%;
+    height: 60%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+
+.progress-bar {
+    background-color: #fff;
+    height: 4px;
+    width: 100%;
+    animation: grow 10s linear infinite;
+    transform-origin: left;
+}
+
+@keyframes grow {
+    0% {
+        transform: scaleX(0);
+    }
 }
 
 .hero-text {
