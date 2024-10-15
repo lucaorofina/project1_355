@@ -44,7 +44,7 @@ html {
 
 .hero-text button {
     font-size: 100%;
-    font-family: Tahoma,sans-serif;
+    font-family: Tahoma, sans-serif;
     border: none;
     outline: 0;
     display: inline-block;
@@ -53,7 +53,7 @@ html {
     background-color: #795307;
     text-align: center;
     cursor: pointer;
-     text-shadow:
+    text-shadow:
         0.07em 0.07em 0 black,
         -0.07em 0.07em 0 black,
         0.07em -0.07em 0 black,
@@ -64,7 +64,7 @@ html {
     background-color: #cd8d0e;
     color: white;
     text-decoration: underline;
-    color:red;
+    color: red;
     transition: color .3s ease;
 }
 
@@ -76,7 +76,7 @@ body {
 }
 
 
-h1{
+h1 {
     font-family: 'Tahoma', 'sans-serif';
     font-size: 48px;
     background-color: #cd8d0e;
@@ -90,7 +90,7 @@ h1{
         -0.07em -0.07em 0 black;
 }
 
-h2{
+h2 {
     font-family: 'Tahoma', 'sans-serif';
     font-size: 36px;
     background-color: #795307FF;
@@ -115,13 +115,13 @@ header {
 
 
 .radio-group {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .radio-group input[type="radio"] {
-  margin-right: 5px;
+    margin-right: 5px;
 }
 
 
@@ -138,7 +138,7 @@ nav ul {
 
 nav ul li {
     margin: 10px 20px;
-     font-family: 'Verdana';
+    font-family: 'Verdana';
 
 
 }
@@ -157,7 +157,7 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
-    color:red;
+    color: red;
     transition: color .3s ease;
 
 }
@@ -225,9 +225,9 @@ section {
 .form-button:hover {
     background-color: #940404;
     text-decoration: underline;
-    color:red;
+    color: red;
     transition: color .3s ease;
-     transform: scale(1.2);
+    transform: scale(1.2);
     transition: transform 0.3s ease;
 }
 
@@ -484,4 +484,84 @@ body.showCart .container {
 
 .listCart::-webkit-scrollbar {
     width: 0;
+}
+
+/* Image Slider */
+
+.cat-carousel {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+
+.cat-container {
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.cat-container::-webkit-scrollbar {
+    display: none;
+}
+
+.cat-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+}
+
+.cat-image {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.cat-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cat-name{
+    font-size: 20px;
+    height: 20px;
+}
+
+.pre-btn,
+.nxt-btn {
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+}
+
+.pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.nxt-btn {
+    right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+    opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+    opacity: 1;
 }
