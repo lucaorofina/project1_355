@@ -4,6 +4,12 @@ html {
     margin: 0;
 }
 
+#logo {
+    width: 600px;
+    height: 200px;
+    border-radius: 20px;
+}
+
 .hero-image {
     height: 60%;
     background-position: center;
