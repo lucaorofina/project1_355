@@ -1,4 +1,4 @@
-/* Some CSS elements commented out temporarily*/
+/* Some CSS elements commented out temporarily because overlapping css*/
 
 body,
 html {
