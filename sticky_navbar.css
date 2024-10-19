@@ -13,6 +13,7 @@ body{
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    max-height: 140px;
 }
 
 .logo {
@@ -20,15 +21,15 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     align-items: center; 
-    justify-content: flex-start;
+    justify-content: center;
     margin-left: 0;
 }
 
 .logo-img {
-    width: auto; 
-    height: 80px;
+    width: 100%; 
+    height: 90px;
     max-width: none; 
-    scale: 1.8;
+    scale: 1.T;
 }
 
 .nav {
@@ -48,13 +49,22 @@ body{
     transition: all .3s ease-in-out;
 }
 
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
 .nav ul {
     display: flex;
     list-style-type: none;
     align-items: center;
     justify-content: center;
-    margin-left: 30px;
-    font-size: 20px;
+    margin-left: 0px;
 }
 
 .nav a {
