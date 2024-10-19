@@ -18,6 +18,17 @@ body{
 .logo {
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start;
+    margin-left: 0;
+}
+
+.logo-img {
+    width: auto; 
+    height: 80px;
+    max-width: none; 
+    scale: 1.8;
 }
 
 .nav {
@@ -33,7 +44,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 30px 0px;
     transition: all .3s ease-in-out;
 }
 
@@ -42,6 +53,8 @@ body{
     list-style-type: none;
     align-items: center;
     justify-content: center;
+    margin-left: 30px;
+    font-size: 20px;
 }
 
 .nav a {
