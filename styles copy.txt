@@ -1,3 +1,5 @@
+/* Some CSS elements commented out temporarily*/
+
 body,
 html {
     height: 100%;
