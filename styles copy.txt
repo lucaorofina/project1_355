@@ -4,6 +4,7 @@ html {
     margin: 0;
 }
 
+/*
 .hero-image {
     background-image: url('images/cat-hero.jpeg');
     height: 70%;
@@ -54,7 +55,7 @@ html {
     color:red;
     transition: color .3s ease;
 }
-
+*/
 body {
     font-family: 'Comic Sans MS';
     margin: 0;
@@ -62,7 +63,7 @@ body {
     background-color: #f5f5f5;
 }
 
-
+/*
 h1{
     font-family: 'Tahoma', 'sans-serif';
     font-size: 48px;
@@ -133,6 +134,7 @@ nav ul li a:hover {
     transition: color .3s ease;
 
 }
+*/
 
 section {
     padding: 20px;
