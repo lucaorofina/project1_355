@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kitty Kafé </title>
     <link rel="stylesheet" href="styles.css">
+    <script src="reservation.js"></script>
 </head>
-<body>
 
+<body>
 <header>
     <h1>Kitty Kafé</h1>
 </header>
@@ -30,9 +31,37 @@
     </div>
   </div>
 
-    <h1>PLACEHOLDER FOR RESERVATIONS</h1>
+  <section id="reservation" class="reservation-form">
+    <h2>Make a Reservation</h2>
+    <form id="reservation-form">
+        <label for="reservation-name">Name:</label>
+        <input type="text" id="reservation-name" name="reservation-name" placeholder="Your name" required>
 
+        <label for="reservation-phone">Phone Number:</label>
+        <input type="text" id="reservation-phone" name="reservation-phone" placeholder="Your phone number" required>
 
+        <label for="date">Reservation Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Time:</label>
+        <select type="time" id="time" name="time" required></select>
+    
+        <label for="guests">Number of Guests:</label>
+        <select id="guests" name="guests" placeholder="Select Party Size" required>
+            <option value="" disabled selected>Select Party Size</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option> 
+        </select>
+        <label for="reservation-notes">Notes:</label>
+        <input type="text" id="reservation-notes" name="reservation-note" placeholder="Additional notes" required>
+
+        <button class="form-button" type="submit">Reserve Table</button>
+    </form>
+</section>
 
 <footer>
     <section id="contact" class="contact-form">
@@ -47,7 +76,7 @@
             <button class="form-button" type="submit">Send Message</button>
         </form>
     </section>
-    <p>&copy; 2024 Café Delight. All Rights Reserved.</p>
+    <p>&copy; 2024 Kitty Kafé. All Rights Reserved.</p>
 </footer>
 
 </body>
