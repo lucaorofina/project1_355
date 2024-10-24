@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kitty Kafé </title>
     <link rel="stylesheet" href="styles.css">
-    <script src="reservation.js"></script>
 </head>
-
 <body>
-<header>
-    <h1>Kitty Kafé</h1>
-</header>
+
+    <header>
+        <img src="images/titlelogo.png" id="logo">
+    </header>
 
 <nav>
     <ul>
@@ -23,60 +22,121 @@
     </ul>
 </nav>
 
-<div class="hero-image">
-    <div class="hero-text">
-      <h1>Cat Cafe</h1>
-      <p>NYC's Hotspot for spending time with your furry friends.</p>
-      <button class="hero-text-button" type="submit">Reserve Table</button>
-    </div>
-  </div>
+<h1>Make a Reservation</h1>
 
-  <section id="reservation" class="reservation-form">
-    <h2>Make a Reservation</h2>
-    <form id="reservation-form">
-        <label for="reservation-name">Name:</label>
-        <input type="text" id="reservation-name" name="reservation-name" placeholder="Your name" required>
 
-        <label for="reservation-phone">Phone Number:</label>
-        <input type="text" id="reservation-phone" name="reservation-phone" placeholder="Your phone number" required>
 
-        <label for="date">Reservation Date:</label>
+
+<div>
+    <section id="adoption" class="contact-form">
+    <h2>Reservation Form:</h2>
+    <form>
+        <div>
+        <label for="yourname">Your Name:</label>
+        <input type="text" id="yourname" name="yourname" placeholder="Enter your name" required>
+        </div>  
+
+        <div>
+        <label for="phone">Your Phone Numbers:</label>
+        <input type="tel" class="phone" id="phone" 
+                placeholder="123-456-7890" pattern="\d{3}-?\d{3}-?\d{4}" required>
+        </div>
+
+        <div>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" 
+                placeholder="name@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+        </div>
+
+        <div>
+        <label for="date">Date</label>
         <input type="date" id="date" name="date" required>
+        <script>
+            const today = new Date();
+            
+            const minDate = new Date(today);
+            minDate.setDate(today.getDate() + 1);
+            
+            const maxDate = new Date(today);
+            maxDate.setMonth(today.getMonth() + 2);
+            
+            const minDateString = minDate.toISOString().split('T')[0];
+            const maxDateString = maxDate.toISOString().split('T')[0];
+            
+            const dateInput = document.getElementById("date");
+            dateInput.setAttribute("min", minDateString);
+            dateInput.setAttribute("max", maxDateString);
+        </script>
+        </div>
 
-        <label for="time">Time:</label>
-        <select type="time" id="time" name="time" required></select>
-    
-        <label for="guests">Number of Guests:</label>
-        <select id="guests" name="guests" placeholder="Select Party Size" required>
-            <option value="" disabled selected>Select Party Size</option>
+        <div>
+            <label for="hours">Choose a time:</label>
+            <div id="time-picker">
+                <select id="hours">
+                    <option value="9am">9</option>
+                    <option value="10am">10</option>
+                    <option value="11am">11</option>
+                    <option value="12pm">12</option>
+                    <option value="1pm">13</option>
+                    <option value="2pm">14</option>
+                    <option value="3pm">15</option>
+                    <option value="4pm">16</option>
+                    <option value="5pm">17</option>
+                </select>
+                <select id="minutes">
+                    <option value="00">00</option>
+                    <option value="15">15</option>
+                    <option value="30">30</option>
+                    <option value="45">45</option>
+                </select> 
+                </div>
+                <small>Open Hour: 9:00am - 6:30pm</small>
+        </div>
+
+        <br>
+
+        <div>
+        <label for="size">Size of Party:</label>
+        <select name="size" id="size">
             <option value="1">1</option>
             <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option> 
+            <option value="3-5">3-5</option>
+            <option value="6-10">6-10</option>
+            <option value=">10">more than 10</option>
         </select>
-        <label for="reservation-notes">Notes:</label>
-        <input type="text" id="reservation-notes" name="reservation-note" placeholder="Additional notes" required>
+        </div>
 
-        <button class="form-button" type="submit">Reserve Table</button>
+        <br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Your message here"></textarea>
+
+
+        <br>
+        <button class="form-button" type="submit">Submit</button>
+
+
     </form>
+ </div>
+
+
 </section>
 
+
 <footer>
-    <section id="contact" class="contact-form">
-        <h2>Contact Us</h2>
-        <form>
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+<section id="contact" class="contact-form">
+    <h2>Contact Us</h2>
+    <form>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" placeholder="Your message here" required></textarea>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Your message here" required></textarea>
 
-            <button class="form-button" type="submit">Send Message</button>
-        </form>
-    </section>
-    <p>&copy; 2024 Kitty Kafé. All Rights Reserved.</p>
+        <button class="form-button" type="submit">Send Message</button>
+    </form>
+</section>
+<p>&copy; 2024 Kitty Kafe. All Rights Reserved.</p>
 </footer>
 
 </body>
