@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": " 1",
+        "price": 1,
+        "image": "merch/1.png"
+    },
+    {
+        "id": 2,
+        "name": " 2",
+        "price": 2,
+        "image": "merch/2.png"
+    },
+    {
+        "id": 3,
+        "name": " 3",
+        "price": 3,
+        "image": "merch/3.png"
+    },
+    {
+        "id": 4,
+        "name": " 4",
+        "price": 4,
+        "image": "merch/4.png"
+    },
+    {
+        "id": 5,
+        "name": " 5",
+        "price": 5,
+        "image": "merch/5.png"
+    },
+    {
+        "id": 6,
+        "name": " 6",
+        "price": 6,
+        "image": "merch/6.png"
+    },
+    {
+        "id": 7,
+        "name": " 7",
+        "price": 7,
+        "image": "merch/7.png"
+    },
+    {
+        "id": 8,
+        "name": " 8",
+        "price": 8,
+        "image": "merch/8.png"
+    },
+    {
+        "id": 9,
+        "name": " 9",
+        "price": 9,
+        "image": "merch/9.png"
+    }
+]

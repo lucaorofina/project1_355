@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitty Kafé </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/titlelogo.png" id="logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="adoption.html">Adoptions</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="merch.html">Merchandise</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-image" style="background-image: url('home/b1.jpg');">
+        <div class="hero-text">
+            <h1>Cat Cafe</h1>
+            <p>NYC's Hotspot for meeting furry friends and enjoying fantastic food!</p>
+            <a href="reservations.html"><button class="hero-text-button">Reservations</button></a>
+            <p>View our adoptable cats here:</p>
+            <a href="adoption.html"><button class="hero-text-button">Adoptions</button></a>
+
+
+        </div>
+    </div>
+
+    </br>
+
+    <div class="carousel">
+        <div class="image-container" id="imgs">
+
+            <img src="/adoption/Adoption1.jpg" alt="Cat 1"/>
+            <img src="/adoption/Adoption2.jpg" alt="Cat 2"/>
+            <img src="/adoption/Adoption3.jpg" alt="Cat 3"/>
+            <img src="/adoption/Adoption4.jpg" alt="Cat 4"/>
+            <img src="/adoption/Adoption5.jpg" alt="Cat 5"/>
+            <img src="/adoption/Adoption6.jpg" alt="Cat 6"/>
+            <img src="/adoption/Adoption7.jpg" alt="Cat 7"/>
+            <img src="/adoption/Adoption8.jpg" alt="Cat 8"/>
+            <img src="/adoption/Adoption9.jpg" alt="Cat 9"/>
+            <img src="/adoption/Adoption10.jpg" alt="Cat 10"/>
+
+        </div>
+
+             <div class="buttons-container">
+                 <button id="left" class="form-button"> Prev</button>
+                <button id="right" class="form-button">Next</button>
+            </div>
+
+    </div>
+        <script src="carousel.js"></script>
+
+
+
+
+
+
+
+    <section id="events" class="events">
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="https://example.com">
+                    <img src="images/cat1.jpeg" alt="Tuesday">
+                    <div class="caption"> Taco Tuesday</div>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="https://example.com">
+                    <img src="images/cat1.jpeg" alt="Wednesday">
+                    <div class="caption">Whiskey Wednesday</div>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="https://example.com">
+                    <img src="images/cat1.jpeg" alt="Thursday">
+                    <div class="caption">Thirsty Thursday</div>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="https://example.com">
+                    <img src="images/cat1.jpeg" alt="Friday">
+                    <div class="caption">Freaky Friday</div>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="https://example.com">
+                    <img src="images/cat1.jpeg" alt="Saturday">
+                    <div class="caption">Caturday</div>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="https://example.com">
+                    <img src="images/cat1.jpeg" alt="Sunday">
+                    <div class="caption">Sunday Brunch</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="reservation" class="reservation-form">
+        <h2>Make a Reservation</h2>
+        <form>
+            <label for="reservation-name">Your Name:</label>
+            <input type="text" id="reservation-name" name="reservation-name" placeholder="Your name" required>
+
+            <label for="date">Reservation Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="guests">Number of Guests:</label>
+            <select id="guests" name="guests">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+
+            <button class="form-button" type="submit">Reserve Table</button>
+        </form>
+    </section>
+
+
+
+
+
+    <footer>
+        <section id="contact" class="contact-form">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Your message here" required></textarea>
+
+                <button class="form-button" type="submit">Send Message</button>
+            </form>
+        </section>
+        <p>&copy; 2024 Kitty Kafe. All Rights Reserved.</p>
+    </footer>
+
+    <script src="transform.js"></script>
+</body>
+
+</html>
