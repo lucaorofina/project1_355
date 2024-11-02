@@ -7,7 +7,6 @@ let closeCart = document.querySelector('.close');
 let products = [];
 let cart = [];
 
-
 iconCart.addEventListener('click', () => {
     body.classList.toggle('showCart');
 })
@@ -127,7 +126,6 @@ const changeQuantityCart = (product_id, type) => {
 }
 
 const initApp = () => {
-
     fetch('products.json')
         .then(response => response.json())
         .then(data => {

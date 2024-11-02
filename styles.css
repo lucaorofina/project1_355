@@ -8,7 +8,6 @@ html {
     width: 600px;
     height: 200px;
     border-radius: 20px;
-    object-fit:fill;
 }
 
 .hero-image {
@@ -76,7 +75,7 @@ html {
 }
 
 body {
-    font-family: 'Comic Sans MS', 'sans-serif';
+    font-family: 'Comic Sans MS';
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
@@ -131,12 +130,16 @@ header {
     margin-right: 5px;
 }
 
+
+
+
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
+    background-color: #795307;
 }
 
 nav ul li {
@@ -244,39 +247,45 @@ ol li {
     margin-bottom: 10px;
 }
 
-img {
-    height: 500px;
-    width: 500px;
-    object-fit: cover;
+
+img{
+    height:500px;
+    width:500px;
+    object-fit:cover;
     align-content: center;
     margin: 0 auto;
+
 }
 
-.carousel {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+.carousel{
+    box-shadow:5px 5px 10px rgba(0,0,0,0.3);
     align-content: center;
-    height: 530px;
-    width: 400px;
-    overflow: hidden;
+    height:530px;
+    width:400px;
+    overflow:hidden;
     margin: 0 auto;
     border: #940404;
     border-width: thick;
     border-style: groove;
 }
 
-.image-container {
+.image-container{
     display: flex;
     align-content: center;
     transform: translateX(0px);
     transition: transform 0.5s ease-in-out;
 }
 
-.buttons-container {
-    display: flex;
+.buttons-container{
+    display:flex;
     justify-content: space-between;
-    width: 100%;
+    width:100%;
 
 }
+
+
+
+
 
 footer {
     background-color: #333;
@@ -325,7 +334,7 @@ footer {
 }
 
 .background {
-    background-image: url(images/background.jpg);
+    background-image: url(merch/background.jpg);
     background-size: cover;
 }
 
@@ -573,28 +582,24 @@ body.showCart .container {
 
 .cat-name {
     font-size: 20px;
-    height: 40px;
+    height: 20px;
     padding-top: 5px;
     border-radius: 20px;
 }
 
-.arrow{
-    width: auto;
-    height: 30px;
-}
-
 .pre-btn,
 .nxt-btn {
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 200px;
+    margin-right: 200px;
     border: none;
-    height: 500px;
+    width: 10vw;
+    height: 100%;
     position: absolute;
     top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
+    background: linear-gradient(90deg, rgb(245, 245, 245, 0) 0%, rgb(245, 245, 245) 100%);
     cursor: pointer;
     z-index: 8;
 }
@@ -616,167 +621,4 @@ body.showCart .container {
 .pre-btn:hover img,
 .nxt-btn:hover img {
     opacity: 1;
-}
-
-/* Sticky Nav */
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-*{
-    box-sizing: border-box;
-}
-
-body{
-    font-family: "Roboto", sans-serif;
-    padding-bottom: 50px;
-    padding-top: 110px;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    max-height: 140px;
-    padding-bottom: 50px;
-}
-
-.logo {
-    all: unset;
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-    margin-left: -100px;
-    margin-right: 400px;
-    height: 80px;
-    width: 100%;
-}
-
-.logo-img {
-    width: 200px; 
-    height: 100px;
-    max-width: none; 
-}
-
-.nav {
-    position: fixed;
-    background-color: #cd8d0e;
-    top: 0;
-    left: 0;
-    right: 0;
-    transition: all .3s ease-in-out;
-    z-index: 100;
-}
-
-.nav .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 0px;
-    transition: all .3s ease-in-out;
-}
-
-.radio-group {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.radio-group input[type="radio"] {
-    margin-right: 5px;
-}
-
-.nav ul {
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-    justify-content: center;
-    margin-left: 0px;
-}
-
-.nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 7px 15px;
-    transition: all .3s ease-in-out;
-}
-
-.nav.active {
-    background-color: orange;
-}
-
-.nav.active a {
-    background-color: #cd8d0e;
-
-}
-
-.nav .active .container {
-    padding: 10px 0;
-}
-
-.nav a.current {
-    color: red;
-}
-
-.nav a:hover {
-    color: red;
-    font-weight: bold;
-    transform: scale(1.2);
-    transition: transform 0.3s ease;
-}
-
-.hero {
-    background-image: url("https://images.pexels.com/photos/15597164/pexels-photo-15597164/free-photo-of-a-cat-sitting-on-top-of-some-rocks.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom center;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    margin-bottom: 20px;
-    z-index: -2;
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-    z-index: -1;
-    pointer-events: none;
-}
-
-.hero h1 {
-    all: unset;
-    font-size: 46px;
-    margin: -20px 0 20px;
-}
-
-.hero p{
-    font-size: 20px;
-    letter-spacing: 1px;
-}
-
-.hero-text-button {
-    border: none;
-    border-radius: 5px;
-    outline: 0;
-    display: inline-block;
-    padding: 10px 25px;
-    color: rgb(215, 209, 209);
-
-    text-align: center;
-    cursor: pointer;
-    z-index: 2;
-    position: relative;
-}
-
-.hero-text-button:hover {
-    background-color: #cd8d0e;
-    color: white;
 }

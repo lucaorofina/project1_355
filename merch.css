@@ -1,37 +1,13 @@
-body,
-html {
-    height: 100%;
-    margin: 0;
-}
-
 * {
     font-family: 'Comic Sans MS';
+    transition: all .3s ease;
 }
 
-#logo {
-    width: 600px;
-    height: 200px;
-    border-radius: 20px;
-    object-fit:fill;
-}
+body,
+html {
+    height: 120%;
+    margin-top: 35px;
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-}
-
-h1 {
-    font-size: 48px;
-    background-color: #cd8d0e;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-    text-shadow:
-        0.07em 0.07em 0 black,
-        -0.07em 0.07em 0 black,
-        0.07em -0.07em 0 black,
-        -0.07em -0.07em 0 black
 }
 
 h2 {
@@ -55,43 +31,6 @@ header {
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #795307;
-}
-
-nav ul li {
-    margin: 10px 20px;
-    font-size: 20px;
-}
-
-nav ul li:hover {
-    transform: scale(1.2);
-    transition: transform 0.3s ease;
-
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-    color: red;
-    transition: color .3s ease;
-
-}
-
-.menu table {
-    width: 100%;
-    border-collapse: collapse;
-}
 .contact-form{
     max-width: 600px;
     margin: 0 auto;
@@ -122,7 +61,7 @@ nav ul li a:hover {
     text-decoration: underline;
     color: red;
     transition: color .3s ease;
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: transform 0.3s ease;
 }
 
@@ -136,9 +75,10 @@ footer {
 .background {
     background-image: url(images/background.jpg);
     background-size: cover;
+    height: 150%;
 }
 
-.container {
+.merch_container {
     width: 900px;
     margin: auto;
     max-width: 90vw;
@@ -207,7 +147,7 @@ svg {
 
 .listProduct .item:hover {
     transform: scale(1.1);
-    transition: transform 0.3s ease;
+    transition: all .3s ease;
 }
 
 .listProduct .item h2 {
@@ -328,3 +268,5 @@ body.showCart .container {
 .listCart::-webkit-scrollbar {
     width: 0;
 }
+
+
