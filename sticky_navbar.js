@@ -5,6 +5,14 @@ function loadStickyNavbar() {
             document.getElementById('sticky_navbar').innerHTML = data;
 
             const nav = document.querySelector(".nav");
+            const search = document.querySelector('.search');
+            const btn = document.querySelector('.btn');
+            const input = document.querySelector('.input');
+
+            btn.addEventListener('click', ()=>{
+                search.classList.toggle('active')
+                input.focus()
+            })
 
             window.addEventListener("scroll", fixNav);
 
