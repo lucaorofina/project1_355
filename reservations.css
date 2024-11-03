@@ -15,7 +15,11 @@ html {
     background-size: cover;
     position: relative;
 }
-
+.background {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    height: 150%;
+}
 @keyframes grow {
     0% {
         transform: scaleX(0);
