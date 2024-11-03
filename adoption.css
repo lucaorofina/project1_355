@@ -274,3 +274,17 @@ h2 {
         0.07em -0.07em 0 black,
         -0.07em -0.07em 0 black;
 }
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.radio-group p {
+  margin-bottom: 10px;
+}
+
+.radio-group label {
+  margin-left: 5px;
+}
