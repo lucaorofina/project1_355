@@ -9,11 +9,11 @@ html {
 }
 .background {
     background-image: url(images/background.jpg);
-    background-size: cover;
-    height: 180%;
+    background-size: auto;
+    background-repeat: repeat;
 }
 .hero-image {
-    height: 60%;
+    height: 80%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -17,8 +17,8 @@ html {
 }
 .background {
     background-image: url(images/background.jpg);
-    background-size: cover;
-    height: 150%;
+    background-size: auto;
+    background-repeat: repeat;
 }
 @keyframes grow {
     0% {
@@ -220,4 +220,11 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
+}
+
+label{
+    font-size: 16px;
+    background-color: #795307FF;
+    color:white;
+    padding:5px;
 }

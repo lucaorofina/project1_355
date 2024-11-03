@@ -74,8 +74,8 @@ footer {
 
 .background {
     background-image: url(images/background.jpg);
-    background-size: cover;
-    height: 150%;
+    background-size: auto;
+    background-repeat: repeat;
 }
 
 .merch_container {
