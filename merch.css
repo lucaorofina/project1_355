@@ -5,8 +5,8 @@
 
 body,
 html {
-    height: 101%;
-    margin-top: 3rem;
+    height: 100%;
+    margin-top: 4rem;
 
 }
 
@@ -31,14 +31,13 @@ header {
     text-align: center;
 }
 
-.contact-form{
+.contact-form {
     max-width: 600px;
     margin: 0 auto;
 }
 
 .contact-form input,
-.contact-form textarea
- {
+.contact-form textarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -74,8 +73,8 @@ footer {
 
 .background {
     background-image: url(images/background.jpg);
-    background-size: cover;
-    height: 150%;
+    background-size: auto;
+    background-repeat: repeat;
 }
 
 .merch_container {
@@ -268,5 +267,3 @@ body.showCart .cartTab {
 .listCart::-webkit-scrollbar {
     width: 0;
 }
-
-

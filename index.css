@@ -6,12 +6,14 @@ body,
 html {
     height: 100%;
     margin-top: 70px;
-    background-image: url(images/background.jpg);
-    background-size: cover;
 }
-
+.background {
+    background-image: url(images/background.jpg);
+    background-size: auto;
+    background-repeat: repeat;
+}
 .hero-image {
-    height: 60%;
+    height: 80%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

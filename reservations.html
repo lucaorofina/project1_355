@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,40 +9,172 @@
 </head>
 <body>
 <div id="sticky_navbar"></div>
-  <section id="reservation" class="reservation-form">
-    <h2>Make a Reservation</h2>
-    <form id="reservation-form">
-        <label for="reservation-name">Name:</label>
-        <input type="text" id="reservation-name" name="reservation-name" placeholder="Your name" required>
-
-        <label for="reservation-phone">Phone Number:</label>
-        <input type="text" id="reservation-phone" name="reservation-phone" placeholder="Your phone number" required>
-
-        <label for="date">Reservation Date:</label>
-        <input type="date" id="date" name="date" required>
-
-        <label for="time">Time:</label>
-        <select type="time" id="time" name="time" required></select>
+<!--<div class="hero-image">-->
+<!--    <div class="hero-text">-->
+<!--      <h1>Cat Cafe</h1>-->
+<!--      <p>NYC's Hotspot for spending time with your furry friends.</p>-->
+<!--      <button class="hero-text-button" type="submit">Reserve Table</button>-->
+<!--    </div>-->
+<!--  </div>-->
+ <div class="background">
+     </br>
+     </br>
+     </br>
+     </br>
+    <h1>Make a Reservation</h1>
+    <section class="cat-carousel">
+        <button class="pre-btn"><img class="arrow" src="images/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img class="arrow" src="images/arrow.png" alt=""></button>
     
-        <label for="guests">Number of Guests:</label>
-        <select id="guests" name="guests" placeholder="Select Party Size" required>
-            <option value="" disabled selected>Select Party Size</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option> 
-        </select>
-        <label for="reservation-notes">Notes:</label>
-        <input type="text" id="reservation-notes" name="reservation-note" placeholder="Additional notes" required>
-
-        <button class="form-button" type="submit">Reserve Table</button>
-        <script src="reservation.js"></script>
-
-    </form>
-</section>
-
+        <div class="cat-container">
+            <div class="adoption">
+                <img src="images/adoption1.jpg" alt="Cat Pic">
+                <div class="adoption-info">
+                    <h3>Bradley</h3>
+                </div>
+                <div class="adoption-description">
+                    <h4>Description</h4>
+                    Very furry and nice, likes to scratch, sleep,
+                    wander around,chase litle critters and climb things.
+                </div>
+            </div>
+    
+            <div class="adoption">
+                <img src="images/adoption2.jpg" alt="Cat Pic">
+                <div class="adoption-info">
+                    <h3>Tony</h3>
+    
+                </div>
+                <div class="adoption-description">
+                    <h4>Description</h4>
+                    Very furry and nice, likes to scratch, sleep,
+                    wander around, chase little critters and climb things.                </div>
+            </div>
+    
+            <div class="adoption">
+                <img src="images/adoption3.jpg" alt="Cat Pic">
+                <div class="adoption-info">
+                    <h3>Lila</h3>
+                </div>
+                <div class="adoption-description">
+                    <h4>Description</h4>
+                    Calm and affectionate, loves to cuddle and has a soft purr.
+                </div>
+            </div>
+            <div class="adoption">
+                <img src="images/adoption4.jpg" alt="Cat Pic">
+                <div class="adoption-info">
+                    <h3>Marbles</h3>
+                </div>
+                <div class="adoption-description">
+                    <h4>Description</h4>
+                    Playful and active, enjoys playing with toys and is very friendly.
+                </div>
+            </div>
+    
+            <div class="adoption">
+                <img src="images/adoption5.jpg" alt="Cat Pic">
+                <div class="adoption-info">
+                    <h3>Lizzie</h3>
+    
+                </div>
+                <div class="adoption-description">
+                    <h4>Description</h4>
+                    Calm and affectionate, loves to cuddle and has a soft purr.
+                </div>
+            </div>
+            <div class="adoption">
+                <img src="images/adoption6.jpg" alt="Cat Pic">
+                <div class="adoption-info">
+                    <h3>Bumble</h3>
+    
+                </div>
+                <div class="adoption-description">
+                    <h4>Description</h4>
+                    Playful and active, enjoys playing with toys and is very friendly.
+                </div>
+            </div>
+    
+            <div class="adoption">
+                <img src="images/adoption7.jpg" alt="Cat Pic">
+                <div class="adoption-info">
+                    <h3>Astrid</h3>
+    
+                </div>
+                <div class="adoption-description">
+                    <h4>Description</h4>
+                    Calm and affectionate, loves to cuddle and has a soft purr.
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="slider.js"></script>
+    <section id="reservation" class="reservation-form">
+        <h2>Make a Reservation</h2>
+        <form id="reservation-form">
+            <label for="reservation-name">Name:</label>
+            <input type="text" id="reservation-name" name="reservation-name" placeholder="Your name" required>
+    
+            <label for="reservation-phone">Phone Number:</label>
+            <input type="text" id="reservation-phone" name="reservation-phone" 
+                    placeholder="Your phone number" pattern="\d{3}-?\d{3}-?\d{4}" required>
+    
+            <label for="reservation-email">Your Email:</label>
+            <input type="email" id="reservation-email" name="reservation-email" 
+                    placeholder="Your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+    
+            <label for="date">Reservation Date:</label>
+            <input type="date" id="date" name="date" required>
+            <script>
+                const today = new Date();
+                
+                const minDate = new Date(today);
+                minDate.setDate(today.getDate() + 1);
+                
+                const maxDate = new Date(today);
+                maxDate.setMonth(today.getMonth() + 2);
+                
+                const minDateString = minDate.toISOString().split('T')[0];
+                const maxDateString = maxDate.toISOString().split('T')[0];
+                
+                const dateInput = document.getElementById("date");
+                dateInput.setAttribute("min", minDateString);
+                dateInput.setAttribute("max", maxDateString);
+            </script>
+    
+            <label for="time">Time:</label>
+            <select type="time" id="time" name="time" required>
+                <option value="" disabled selected></option>
+                <option value="9">9:00 a.m.</option>
+                <option value="10">10:00 a.m.</option>
+                <option value="11">11:00 a.m.</option>
+                <option value="12">12:00 p.m.</option>
+                <option value="13">1:00 p.m.</option>
+                <option value="14">2:00 p.m</option>
+                <option value="15">3:00 p.m</option>
+                <option value="16">4:00 p.m</option>  
+            </select>
+        
+            <label for="guests">Number of Guests:</label>
+            <select id="guests" name="guests" placeholder="Select party size" required>
+                <option value="" disabled selected>Select Party Size</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option> 
+            </select>
+    
+            <label for="reservation-notes">Notes:</label>
+            <input type="text" id="reservation-notes" name="reservation-note" placeholder="Additional notes">
+    
+            <button class="form-button" type="submit">Reserve Table</button>
+            <script src="reservation.js"></script>
+    
+        </form>
+    </section>
+ </div>
 <footer>
     <section id="contact" class="contact-form">
         <h2>Contact Us</h2>
@@ -55,8 +188,11 @@
             <button class="form-button" type="submit">Send Message</button>
         </form>
     </section>
+    <p>Contact us by calling (123)-456-7890.  Open Monday-Friday 9am-5pm</p>
     <p>&copy; 2024 Kitty Kafé. All Rights Reserved.</p>
 </footer>
+<script src="reservation.js"></script>
 <script src="sticky_navbar.js"></script>
+
 </body>
 </html>
