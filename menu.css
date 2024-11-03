@@ -6,12 +6,10 @@ body,
 html {
     height: 100%;
     margin-top: 70px;
-}
-.background {
     background-image: url(images/background.jpg);
     background-size: cover;
-    height: 150%;
 }
+
 .hero-image {
     height: 60%;
     background-position: center;
@@ -71,7 +69,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: white;
 }
 
 /*MENU CSS*/

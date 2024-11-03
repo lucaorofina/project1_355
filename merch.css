@@ -5,8 +5,8 @@
 
 body,
 html {
-    height: 120%;
-    margin-top: 35px;
+    height: 101%;
+    margin-top: 3rem;
 
 }
 
@@ -16,7 +16,6 @@ h2 {
     color: white;
     padding: 1rem;
     text-align: center;
-
     text-shadow:
         0.07em 0.07em 0 black,
         -0.07em 0.07em 0 black,
@@ -28,6 +27,7 @@ header {
     background-color: #cd8d0e;
     color: white;
     padding: 1rem;
+    margin-top: 1rem;
     text-align: center;
 }
 
@@ -175,6 +175,7 @@ svg {
 }
 
 .cartTab {
+    margin-top: 10rem;
     width: 400px;
     background-color: #353432;
     color: #eee;
@@ -191,12 +192,8 @@ body.showCart .cartTab {
     right: 0;
 }
 
-body.showCart .container {
-    transform: translateX(-250px);
-}
-
 .cartTab h1 {
-    padding: 20px;
+    text-align: center;
     margin: 0;
     font-weight: 300;
 }
@@ -204,6 +201,7 @@ body.showCart .container {
 .cartTab .btn {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    position: relative;
 }
 
 .cartTab button {
@@ -211,6 +209,8 @@ body.showCart .container {
     border: none;
     font-size: 20px;
     cursor: pointer;
+    width: 10rem;
+    height: 3rem;
 }
 
 .cartTab .checkOut:hover {

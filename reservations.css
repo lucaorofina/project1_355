@@ -5,7 +5,9 @@
 body,
 html {
     height: 100%;
-    margin: 0;
+    margin-top: 70px;
+    background-image: url(images/background.jpg);
+    background-size: cover;
 }
 
 .hero-image {
@@ -15,11 +17,7 @@ html {
     background-size: cover;
     position: relative;
 }
-.background {
-    background-image: url(images/background.jpg);
-    background-size: cover;
-    height: 150%;
-}
+
 @keyframes grow {
     0% {
         transform: scaleX(0);
