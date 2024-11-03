@@ -1,0 +1,17 @@
+git add . (adds all content in your current working directory (cwd))
+git add (filename.type) 
+
+for example if you want to add a file main.cpp you would write the following:
+
+git add main.cpp 
+
+After you use the command provided above you add files into the stadging phase/area, and then you would have to commit your files:
+
+git commit -m "message"
+
+lastly you'll need to push the content to your online repo:
+
+git push 
+
+  
+ 

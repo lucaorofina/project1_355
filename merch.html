@@ -5,25 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kitty Kafé </title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="merch.css">
 </head>
 
 <body>
-
-    <header>
-        <img src="images/titlelogo.png" id="logo">
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="adoption.html">Adoptions</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="reservations.html">Reservations</a></li>
-            <li><a href="merch.html">Merchandise</a></li>
-        </ul>
-    </nav>
+    <div id="sticky_navbar"></div>
     <div class="background">
-        <div class="container">
+        <div class="merch_container">
             <header class="shop">
                 <div class="title">SHOP</div>
                 <div class="icon-cart">
@@ -38,6 +26,7 @@
             </div>
         </div>
     </div>
+
     <div class="cartTab">
         <h1>Shopping Cart</h1>
         <div class="listCart">
@@ -48,8 +37,11 @@
             <button class="checkOut">Check Out</button>
         </div>
     </div>
-    </div>
-    <script src="app.js"></script>
+    <script src="merch.js"></script>
+    <script src="sticky_navbar.js"></script>
+
+
+
     <footer>
         <section id="contact" class="contact-form">
             <h2>Contact Us</h2>
@@ -63,9 +55,10 @@
                 <button class="form-button" type="submit">Send Message</button>
             </form>
         </section>
+        <p>Contact us by calling (123)-456-7890.  Open Monday-Friday 9am-5pm</p>
         <p>&copy; 2024 Kitty Kafe. All Rights Reserved.</p>
     </footer>
-
+    <script src="sticky_navbar.js"></script>
 </body>
 
 </html>

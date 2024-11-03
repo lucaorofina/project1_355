@@ -4,33 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kitty Kafé </title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="menu.css">
 </head>
 <body>
-
-    <header>
-        <img src="images/titlelogo.png" id="logo">
-    </header>
-
-<nav>
-    <ul>
-         <li><a href="index.html">Home</a></li>
-        <li><a href="adoption.html">Adoptions</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="reservations.html">Reservations</a></li>
-        <li><a href="merch.html">Merchandise</a></li>
-    </ul>
-</nav>
-
+    <div id="sticky_navbar"></div>
 <div class="hero-image" style="background-image: url('home/b1.jpg');">
     <div class="hero-text">
-      <h1>Cat Cafe</h1>
+      <h1>Kitty Kafe</h1>
       <p>NYC's Hotspot for spending time with your furry friends.</p>
-      <button class="hero-text-button" type="submit">Reserve Table</button>
+      <a href="reservations.html"></a><button class="hero-text-button" type="submit">Reserve Table</button></a>
     </div>
   </div>
+ <div class="background">
 
-    <h1>PLACEHOLDER FOR MENU</h1>
+    <h1>MENU</h1>
+    <div class="menu-section">
+        <h2>Beverages</h2>
+        <table>
+            <tr>
+                <td>
+                    <strong>Espresso</strong>
+                    <div class="description">Served with a lemon peel on the side.</div>
+                </td>
+                <td class="price">$3.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Latte</strong>
+                    <div class="description">Espresso with steamed milk and a thin layer of foam</div>
+                </td>
+                <td class="price">$4.50</td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Cappuccino</strong>
+                    <div class="description">Espresso with equal parts steamed milk, foam and a sprinkle of cinammon.</div>
+                </td>
+                <td class="price">$4.00</td>
+            </tr>
+       
+            <tr>
+                <td>
+                    <strong>Green Tea</strong>
+                    <div class="description">Antioxidant green tea.</div>
+                </td>
+                <td class="price">$3.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Chai Latte</strong>
+                    <div class="description">Spiced tea with steamed milk.</div>
+                </td>
+                <td class="price">$4.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Earl Grey</strong>
+                    <div class="description">Black tea.</div>
+                </td>
+                <td class="price">$3.50</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Sandwiches Section -->
+    <div class="menu-section">
+        <h2>Sandwiches</h2>
+        <table>
+            
+            <tr>
+                <td>
+                    <strong>Smoked Salmon Avocado Toast</strong>
+                    <div class="description">Toasted ciabatta topped with avocado, chili flakes, and cream-cheese with chives</div>
+                </td>
+                <td class="price">$6.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Panini</strong>
+                    <div class="description">Chicken, mozzarella, tomato, and arugula on ciabatta bread with delicious pesto-aioli.</div>
+                </td>
+                <td class="price">$7.50</td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Grilled Cheese</strong>
+                    <div class="description">Melted cheddar and gruyere on toasted challah bread, with thinly sliced fresh tomatoes inside</div>
+                </td>
+                <td class="price">$5.00</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Pastries -->
+    <div class="menu-section">
+        <h2>Pastries and Sweets</h2>
+        <table>
+            
+            <tr>
+                <td>
+                    <strong>Croissant</strong>
+                    <div class="description">Our classic french pastry</div>
+                </td>
+                <td class="price">$3.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Cinnamon Roll</strong>
+                    <div class="description">Cinnamon infused roll topped with homemade icing</div>
+                </td>
+                <td class="price">$4.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Berry Muffin</strong>
+                    <div class="description">Moist muffin with fresh blueberries and cranberries</div>
+                </td>
+                <td class="price">$3.50</td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Banana Bread</strong>
+                    <div class="description">Moist banana bread with walnut and pecans</div>
+                </td>
+                <td class="price">$3.50</td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Alfajores</strong>
+                    <div class="description">Chocolate coated cookies with a dulce de leche filling.</div>
+                </td>
+                <td class="price">$2.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Brownie</strong>
+                    <div class="description">Rich, fudgy chocolate brownie</div>
+                </td>
+                <td class="price">$3.00</td>
+            </tr>
+        </table>
+    </div>
 
 
 
@@ -47,8 +161,11 @@
             <button class="form-button" type="submit">Send Message</button>
         </form>
     </section>
+    <p>Contact us by calling (123)-456-7890.  Open Monday-Friday 9am-5pm</p>
     <p>&copy; 2024 Kitty Kafe. All Rights Reserved.</p>
 </footer>
+<script src="sticky_navbar.js"></script>
+ </div>
 
 </body>
 </html>

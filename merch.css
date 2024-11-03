@@ -1,0 +1,272 @@
+* {
+    font-family: 'Comic Sans MS';
+    transition: all .3s ease;
+}
+
+body,
+html {
+    height: 120%;
+    margin-top: 35px;
+
+}
+
+h2 {
+    font-size: 36px;
+    background-color: #795307FF;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+
+    text-shadow:
+        0.07em 0.07em 0 black,
+        -0.07em 0.07em 0 black,
+        0.07em -0.07em 0 black,
+        -0.07em -0.07em 0 black;
+}
+
+header {
+    background-color: #cd8d0e;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.contact-form{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea
+ {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-button {
+    background-color: #cd8d0e;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.form-button:hover {
+    background-color: #940404;
+    text-decoration: underline;
+    color: red;
+    transition: color .3s ease;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.background {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    height: 150%;
+}
+
+.merch_container {
+    width: 900px;
+    margin: auto;
+    max-width: 90vw;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform .5s;
+}
+
+svg {
+    width: 30px;
+}
+
+.shop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.icon-cart {
+    position: relative;
+}
+
+.icon-cart:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.icon-cart span {
+    position: absolute;
+    background-color: #dc0000;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    top: 50%;
+    right: -20px;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.listProduct .item img {
+    width: 100%;
+    filter: drop-shadow(0 10px 20px #0009);
+}
+
+.listProduct {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.listProduct .item {
+    background-color: #EEEEE6;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.listProduct .item:hover {
+    transform: scale(1.1);
+    transition: all .3s ease;
+}
+
+.listProduct .item h2 {
+    font-weight: 500;
+    font-size: large;
+}
+
+.listProduct .item .price {
+    letter-spacing: 7px;
+    font-size: small;
+}
+
+.listProduct .item button {
+    background-color: #353432;
+    color: #eee;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.listProduct .item button:hover {
+    background-color: #cd8d0e;
+}
+
+.cartTab {
+    width: 400px;
+    background-color: #353432;
+    color: #eee;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+}
+
+body.showCart .cartTab {
+    right: 0;
+}
+
+body.showCart .container {
+    transform: translateX(-250px);
+}
+
+.cartTab h1 {
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.cartTab .btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cartTab button {
+    background-color: #E8BC0E;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cartTab .checkOut:hover {
+    background-color: #e8bc0ece;
+}
+
+.cartTab .close {
+    background-color: #eee;
+}
+
+.cartTab .close:hover {
+    background-color: #eeeeeed5;
+}
+
+.listCart .item img {
+    width: 100%;
+}
+
+.listCart .item {
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.listCart .quantity span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    color: #555;
+    cursor: pointer;
+}
+
+.listCart .quantity span:hover {
+    background-color: #eeeeeed5;
+}
+
+.listCart .quantity span:nth-child(2) {
+    background-color: transparent;
+    color: #eee;
+    cursor: auto;
+}
+
+.listCart .item:nth-child(even) {
+    background-color: #eee1;
+}
+
+.listCart {
+    overflow: auto;
+}
+
+.listCart::-webkit-scrollbar {
+    width: 0;
+}
+
+
