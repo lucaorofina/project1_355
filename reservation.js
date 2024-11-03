@@ -46,7 +46,7 @@ document.getElementById('reservation-form').addEventListener('submit', function(
     localStorage.setItem('reservation', JSON.stringify(reservationData));
     
     //save to database 
-    saveReservationToBackend(reservationData);
+    //saveReservationToBackend(reservationData);
 
 
 //function saveReservationToBackend(data) {

@@ -10,7 +10,7 @@ html {
 .background {
     background-image: url(images/background.jpg);
     background-size: cover;
-    height: 150%;
+    height: 180%;
 }
 .hero-image {
     height: 60%;
