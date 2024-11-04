@@ -5,8 +5,8 @@
 
 body,
 html {
-    height: 120%;
-    margin-top: 35px;
+    height: 100%;
+    margin-top: 4rem;
 
 }
 
@@ -16,7 +16,6 @@ h2 {
     color: white;
     padding: 1rem;
     text-align: center;
-
     text-shadow:
         0.07em 0.07em 0 black,
         -0.07em 0.07em 0 black,
@@ -28,17 +27,17 @@ header {
     background-color: #cd8d0e;
     color: white;
     padding: 1rem;
+    margin-top: 1rem;
     text-align: center;
 }
 
-.contact-form{
+.contact-form {
     max-width: 600px;
     margin: 0 auto;
 }
 
 .contact-form input,
-.contact-form textarea
- {
+.contact-form textarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -83,7 +82,7 @@ footer {
     margin: auto;
     max-width: 90vw;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 10px;
     transition: transform .5s;
 }
 
@@ -175,6 +174,7 @@ svg {
 }
 
 .cartTab {
+    margin-top: 10rem;
     width: 400px;
     background-color: #353432;
     color: #eee;
@@ -191,12 +191,8 @@ body.showCart .cartTab {
     right: 0;
 }
 
-body.showCart .container {
-    transform: translateX(-250px);
-}
-
 .cartTab h1 {
-    padding: 20px;
+    text-align: center;
     margin: 0;
     font-weight: 300;
 }
@@ -204,6 +200,7 @@ body.showCart .container {
 .cartTab .btn {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    position: relative;
 }
 
 .cartTab button {
@@ -211,6 +208,8 @@ body.showCart .container {
     border: none;
     font-size: 20px;
     cursor: pointer;
+    width: 10rem;
+    height: 3rem;
 }
 
 .cartTab .checkOut:hover {
@@ -268,5 +267,3 @@ body.showCart .container {
 .listCart::-webkit-scrollbar {
     width: 0;
 }
-
-

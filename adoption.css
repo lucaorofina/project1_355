@@ -77,103 +77,6 @@ footer {
     text-align: center;
     padding: 1rem;
 }
-
-/* Image Slider */
-
-.cat-carousel {
-    position: relative;
-    overflow: hidden;
-    padding: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
-    background-color: rgb(245, 245, 245);
-}
-
-
-.cat-container {
-    margin-left: 355px;
-    height: 700px;
-    display: flex;
-    overflow: hidden;
-    scroll-behavior: smooth;
-    width: 1070px;
-    background-color: rgb(245, 245, 245);
-    ;
-}
-
-.cat-container::-webkit-scrollbar {
-    display: none;
-}
-
-.cat-card {
-    flex: 0 0 auto;
-    width: 250px;
-    height: 450px;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-.cat-image {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    border-radius: 20px;
-}
-
-.cat-thumb {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.cat-name {
-    font-size: 20px;
-    height: 40px;
-    padding-top: 5px;
-    border-radius: 20px;
-}
-
-.arrow {
-    width: auto;
-    height: 30px;
-}
-
-.pre-btn,
-.nxt-btn {
-    margin-left: 300px;
-    margin-right: 300px;
-    border: none;
-    height: 500px;
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    cursor: pointer;
-    z-index: 8;
-}
-
-.pre-btn {
-    left: 0;
-    transform: rotate(180deg);
-}
-
-.nxt-btn {
-    right: 0;
-}
-
-.pre-btn img,
-.nxt-btn img {
-    opacity: 0.2;
-}
-
-.pre-btn:hover img,
-.nxt-btn:hover img {
-    opacity: 1;
-}
-
 body,
 html {
     height: 100%;
@@ -216,10 +119,13 @@ main{
 }
 .adoption img{
     width: 100%;
+    height: 80%;
 }
 .adoption-description{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
     background-color: #fff;
-    padding: .5rem 1rem 1rem;
     letter-spacing: .5px;
     position: absolute;
     left: 0;
@@ -240,15 +146,18 @@ main{
     border-radius: 3px;
     font-weight: bold;
 }
-h3{
 
-    letter-spacing: .5px;
+h4{
+    text-align: center;
+    text-decoration: underline;
     position: relative;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    max-height: 100%;
-    padding: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    position: relative;
 }
 h1 {
     font-family: 'Comic Sans MS', 'sans-serif';
